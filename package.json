@@ -1,0 +1,30 @@
+{
+  "name": "mmm-temperature-humidity",
+  "version": "0.1.0",
+  "description": "Show temperature and Humidity from dht sensor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prasanthsasikumar/MMM-Temperature-Humidity.git"
+  },
+  "keywords": [
+    "Magic",
+    "Mirror",
+    "Module",
+    "Temperature",
+    "Humidity",
+    "Sensor"
+  ],
+  "author": "Prasanth Sasikumar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prasanthsasikumar/MMM-Temperature-Humidity/issues"
+  },
+  "homepage": "https://github.com/prasanthsasikumar/MMM-Temperature-Humidity#readme",
+  "devDependencies": {
+    "rpi-dht-sensor": "latest"
+  }
+}
