@@ -1,5 +1,6 @@
 # MMM-Temperature-Humidity
 Temperature and Humidity monitoring Module for MagicMirror<sup>2</sup>
+This module works for DHT11, DHT22 and AM2302 sensors.
 
 ## Dependencies
   * An installation of [MagicMirror<sup>2</sup>](https://github.com/MichMich/MagicMirror)
@@ -21,6 +22,7 @@ Temperature and Humidity monitoring Module for MagicMirror<sup>2</sup>
     ```
  3. Run command `npm install` in `~/MagicMirror/modules/MMM-STT` directory.
  4. Run command `sudo apt-get install rpi-dht-sensor`.
+ 5. sudo npm start in `~/MagicMirror`.
 
 ## Config Options
 | **Option** | **Default** | **Description** |
@@ -33,3 +35,11 @@ Temperature and Humidity monitoring Module for MagicMirror<sup>2</sup>
 
 ## For Developers
 Principle is to poll the sensor every set time period for a reading and display the same to the mirror
+Note :  This module uses the BCM2835 library that requires access to /open/mem. Because of this, you will typically run node with admin privileges.
+Also, these values are hard coded in node_helper.js
+sensorType and Pin Number-  
+var dht = new rpiDhtSensor.DHT11(2);
+
+USAGE :
+var dht = new rpiDhtSensor.DHT22(pinNumber);//For DHT22 Type sensor
+var dht = new rpiDhtSensor.DHT11(pinNumber);
