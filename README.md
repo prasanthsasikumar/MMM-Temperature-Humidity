@@ -20,7 +20,7 @@ This module works for DHT11, DHT22 and AM2302 sensors.
         }
     }
     ```
- 3. Run command `npm install` in `~/MagicMirror/modules/MMM-STT` directory.
+ 3. Run command `npm install` in `~/MagicMirror/modules/MMM-Temperature-Humidity` directory.
  4. Run command `sudo apt-get install rpi-dht-sensor`.
  5. sudo npm start in `~/MagicMirror`.
 
